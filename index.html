@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Pairing Tool</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+
+.pairing-container {
+width: 80%;
+margin: 40px auto;
+text-align: center;
+}
+
+.font-selector {
+margin-bottom: 20px;
+}
+
+.font-preview {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="pairing-container">
+<h1>Font Pairing Tool</h1>
+<div class="font-selector">
+<label for="font1">Font 1:</label>
+<select id="font1">
+<option value="Arial">Arial</option>
+<option value="Calibri">Calibri</option>
+<option value="Helvetica">Helvetica</option>
+<!-- Add more font options here -->
+</select>
+</div>
+<div class="font-selector">
+<label for="font2">Font 2:</label>
+<select id="font2">
+<option value="Arial">Arial</option>
+<option value="Calibri">Calibri</option>
+<option value="Helvetica">Helvetica</option>
+<!-- Add more font options here -->
+</select>
+</div>
+<button class="button" onclick="previewFonts()">Preview Fonts</button>
+<div class="font-preview" id="font-preview"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
